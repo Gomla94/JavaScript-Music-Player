@@ -84,7 +84,6 @@ function loadSong(song) {
 }
 
 function updateProgressBar(event) {
-    console.log(event);
     const { currentTime, duration } = event.srcElement;
     const width = (currentTime / duration) * 100;
     progressBar.style.width = `${width}%`;
